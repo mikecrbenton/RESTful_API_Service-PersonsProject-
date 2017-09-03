@@ -14,10 +14,10 @@ https://github.com/mikecrbenton/RESTful_API_Service-PersonsProject-/blob/master/
 
 https://github.com/mikecrbenton/RESTful_API_Service-PersonsProject-/blob/master/src/main/java/org/usd/csci/person/personrest/PersonResource.java
 * Modify the @GET persons() method, so that according to user input it will:
-  * Retrieve all records (lINE 134)
-  * Retrieve a record by name (154)
-  * Retrive a record by name in a range of records (177)
-  * Retrieve a range of records (210)
+  * Retrieve all records (Line 134)
+  * Retrieve a record by name (Line 154)
+  * Retrive a record by name in a range of records (Line 177)
+  * Retrieve a range of records (Line 210)
   
  
   
