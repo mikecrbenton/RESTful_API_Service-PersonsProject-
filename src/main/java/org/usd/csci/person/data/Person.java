@@ -33,14 +33,9 @@ public class Person implements Serializable {
     public static final String BIRTH_DATE_KEY = "birthdate";
     public static final String BIRTH_DATE_FORMAT = "MM/dd/yyyy";
     
-    /**
-     * toJSON   takes the fields from a Java Person object, and returns a String
-     *          in JSON format representing a Person
-     * 
-     * @return  String in JSON format
-     */
     
-    /*public static void main(String[] args)throws Exception{
+    /* //USED FOR TESTING
+    public static void main(String[] args)throws Exception{
         String test = "[1,2,3,4,5]";
         ArrayList mainList = returnArrayList(test);
         
@@ -64,6 +59,12 @@ public class Person implements Serializable {
         
     }
     
+   /**
+    * toJSON   takes the fields from a Java Person object, and returns a String
+    *          in JSON format representing a Person
+    * 
+    * @return  String in JSON format
+    */
     public String toJSON(){
         
         JSONObject obj = new JSONObject();
