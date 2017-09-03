@@ -131,7 +131,7 @@ public class PersonResource {
             @QueryParam("size") int size, @QueryParam("name") String name){
         
         if(size == 0){
-        //BLOCK FOR NO PARAMETERS IN ANY OF THE FIELDS--------------------------
+            //BLOCK FOR NO PARAMETERS ENTERED BY USER IN ANY OF THE SEARCH FIELDS
             if(name==null || name.isEmpty()){
 
                 try{
@@ -151,7 +151,7 @@ public class PersonResource {
                     throw new WebApplicationException(Response.Status.BAD_REQUEST);
                 }
             }
-        //BLOCK FOR FINDING NAME PARAMETER ONLY---------------------------------
+            //BLOCK FOR FINDING THE NAME PARAMETER ONLY
             else if(!name.isEmpty()){
                 
                 try{
@@ -174,7 +174,7 @@ public class PersonResource {
                 }
             }
         }
-        //BLOCK FOR FINDING ALL PARAMETERS (NAME AND START&SIZE PARAMETERS)-----
+        //BLOCK FOR FINDING ALL PARAMETERS ENTERED BY USER (NAME, START, SIZE)
         else if (size != 0 && !name.isEmpty()){
             try{
                 JSONObject jPersons = new JSONObject();      
@@ -207,7 +207,7 @@ public class PersonResource {
             }
         }
         
-        //BLOCK FOR FINDING THE SIZE&START PARAMETER ONLY (NOTHING IN NAME PARAMETER)
+        //BLOCK FOR FINDING THE SIZE & START PARAMETER ONLY (NOTHING ENTERED IN NAME PARAMETER)
         //else (size != 0) ELSE STATEMENT COMMENTED OUT SO METHOD RECOGNIZED A RETURN STATEMENT
             try{
                 JSONObject jPersons = new JSONObject();      
@@ -221,7 +221,7 @@ public class PersonResource {
                     throw new ArrayIndexOutOfBoundsException();
                 } 
                 
-                //REMEMBER int i IS ALWAYS CHANGING, YOU NEEDED A CONSISTENT VARIABLE (start-1) not (i-1)
+                //REMEMBER int i IS ALWAYS CHANGING IN THE LOOP, YOU NEEDED A CONSISTENT VARIABLE (start-1) not (i-1)
                 for(int i = (start-1) ; i < (size+(start-1)) ; i++){       
                         
                      Person aPerson = personArray[i];
