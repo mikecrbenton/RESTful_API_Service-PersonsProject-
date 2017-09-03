@@ -131,7 +131,7 @@ public class PersonResource {
             @QueryParam("size") int size, @QueryParam("name") String name){
         
         if(size == 0){
-            //BLOCK FOR NO PARAMETERS ENTERED BY USER IN ANY OF THE SEARCH FIELDS
+            //BLOCK FOR NO PARAMETERS ENTERED BY USER IN ANY OF THE SEARCH FIELDS (RETRIEVE ALL RECORDS)
             if(name==null || name.isEmpty()){
 
                 try{
@@ -151,7 +151,7 @@ public class PersonResource {
                     throw new WebApplicationException(Response.Status.BAD_REQUEST);
                 }
             }
-            //BLOCK FOR FINDING THE NAME PARAMETER ONLY
+            //BLOCK FOR FINDING THE NAME PARAMETER ONLY (RETRIEVE BY NAME)
             else if(!name.isEmpty()){
                 
                 try{
@@ -207,7 +207,7 @@ public class PersonResource {
             }
         }
         
-        //BLOCK FOR FINDING THE SIZE & START PARAMETER ONLY (NOTHING ENTERED IN NAME PARAMETER)
+        //BLOCK FOR FINDING THE SIZE & START PARAMETER ONLY - NOTHING ENTERED IN NAME PARAMETER(RETRIEVE RANGE OF RECORDS)
         //else (size != 0) ELSE STATEMENT COMMENTED OUT SO METHOD RECOGNIZED A RETURN STATEMENT
             try{
                 JSONObject jPersons = new JSONObject();      
