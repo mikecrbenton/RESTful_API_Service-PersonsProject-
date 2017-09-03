@@ -1,5 +1,5 @@
 # RESTful_API_Service-PersonsProject-
-CSC 470 Software Engineering // A RESTful API allowing basic ADD|UPDATE|DELETE|GET functionality
+CSC 470 Software Engineering // A RESTful API introduction to ADD|UPDATE|DELETE|GET functionality
 
 ## Assignment Overview:
 Extension of JSFClient_RESTful-PersonProject 
