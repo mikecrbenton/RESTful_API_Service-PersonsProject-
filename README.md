@@ -1,5 +1,5 @@
 # RESTful_API_Service-PersonsProject-
-CSC 470 Software Engineering // A RESTful API introduction to ADD|UPDATE|DELETE|GET functionality
+CSC 470 Software Engineering // A RESTful API introduction to ADD|UPDATE|DELETE|GET functionality. Much of the project codebase is boilerplate, frameworks and project walkthrough.  All methods, tests and modifications written for the assignment are indexed and labeled under the "Code Written" header for every corresponding section. 
 
 ## Assignment Overview:
 Extension of JSFClient_RESTful-PersonProject 
